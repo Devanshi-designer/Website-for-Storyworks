@@ -1,158 +1,164 @@
-/* Reset default styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Body */
+/* Global */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: #f8f8f8;
     color: #333;
-    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
-/* Header / Navigation */
+/* Navbar */
 header {
-    background-color: #4CAF50; 
-    padding: 15px 20px;
+    background: #ffffff;
+    padding: 15px 25px;
+    border-bottom: 1px solid #e1e1e1;
 }
 
-header nav ul {
-    list-style: none;
+nav {
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
+.logo {
+    font-size: 22px;
     font-weight: bold;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
-/* Hero Section */
-#hero {
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    color: #0077cc;
+}
+
+/* Hero section */
+.hero, 
+.page-hero {
     text-align: center;
-    padding: 60px 20px;
-    background-color: #e0f2f1;
+    padding: 70px 20px;
+    background: #ffffff;
+    margin-bottom: 30px;
 }
 
-#hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+.hero h1,
+.page-hero h1 {
+    font-size: 36px;
 }
 
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.hero p,
+.page-hero p {
+    font-size: 18px;
+    margin-top: 12px;
 }
 
-#hero button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#hero button:hover {
-    background-color: #45a049;
-}
-
-#hero img {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Problem / Solution Section */
-#problem-solution {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#problem-solution h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-#problem-solution p {
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-}
-
-/* Features Section */
-#features {
-    padding: 50px 20px;
-    background-color: #f1f1f1;
-    text-align: center;
-}
-
-#features h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#features ul {
-    list-style: disc;
-    max-width: 600px;
+/* General section container */
+section {
+    max-width: 900px;
     margin: 0 auto;
-    text-align: left;
+    padding: 30px 20px;
 }
 
-#features ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-/* Call To Action Section */
-#cta {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#cta button {
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    background-color: #4CAF50;
+/* Buttons */
+.btn {
+    padding: 12px 20px;
+    background: #0077cc;
     color: white;
     border: none;
+    border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-#cta button:hover {
-    background-color: #45a049;
+/* Benefits, Features, Testimonials */
+.benefits ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.feature-list {
+    display: grid;
+    gap: 25px;
+}
+
+.feature-item {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+
+.testimonial-box {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    padding-top: 4px;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    margin-top: 40px;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-    header nav ul {
+    nav {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 
-    #hero h1 {
-        font-size: 2rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
+    .hero h1,
+    .page-hero h1 {
+        font-size: 28px;
     }
 }
