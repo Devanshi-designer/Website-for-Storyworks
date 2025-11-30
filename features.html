@@ -1,78 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features | Storyworks</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Features — LABEL • Storyworks</title>
+  <meta name="description" content="LABEL features: scene detection, transcription, OCR, client naming templates, verification." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body class="theme-neo">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html">
+        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="4" stroke="currentColor" stroke-opacity="0.08"/>
+          <path d="M6 9h12M6 15h12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text"><strong>LABEL</strong><small>by Storyworks</small></span>
+      </a>
 
-    <!-- Header + Navigation -->
-    <header>
-        <nav>
-            <h2 class="logo">Storyworks</h2>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html" class="active">Features</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+      <nav class="nav">
+        <a class="nav-link" href="index.html#how">How it works</a>
+        <a class="nav-link" href="features.html">Features</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">☰</button>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section-reveal">
+      <h1>Features</h1>
+      <p class="lead">A concise breakdown of what LABEL can do for your pipeline.</p>
+    </section>
+
+    <section class="features-grid section-reveal">
+      <div class="feature-card">
+        <h3>Video: Scene & Object Detection</h3>
+        <p>Automatic scene boundary detection, per-scene thumbnails, and object tags to include in your naming template.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Audio: Transcription & Speaker ID</h3>
+        <p>Fine-grained speech-to-text with speaker diarization so names can include speaker labels or quotes.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Images: Classification & OCR</h3>
+        <p>Detect faces, landmarks, logos, and extract text from images (OCR) for meaningful filenames.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Templates & Mapping</h3>
+        <p>Define client naming templates (JSON/YAML) with placeholders for date, project, scene, speaker and more.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Verification UI</h3>
+        <p>Human-in-the-loop review before final export — approve, edit, or reject suggested names.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Audit & CSV Reporting</h3>
+        <p>CSV mapping and JSON logs for downstream automation and auditing.</p>
+      </div>
+    </section>
+
+    <section class="mockups section-reveal">
+      <h2>Mockups & Flow</h2>
+      <div class="mockup-grid">
+        <figure><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=60" alt="Mockup 1"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1200&q=60" alt="Mockup 2"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60" alt="Mockup 3"></figure>
+      </div>
+    </section>
+
+    <section class="testimonials section-reveal">
+      <h2>User feedback (placeholder)</h2>
+      <blockquote class="testimonial">"LABEL turned a tedious 4 hour tidy into a 15 minute review — game changer for our post team." — Senior Editor, Sample Studio</blockquote>
+      <blockquote class="testimonial">"We trust the verification step — automates grunt work without surprises." — Creative Director, Sample Agency</blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-left">
+        <div class="foot-brand">LABEL • Storyworks</div>
+        <small class="muted">AI-assisted file organization</small>
+      </div>
+      <div class="foot-right">
+        <nav class="footer-nav">
+          <a href="index.html#how">How it works</a>
+          <a href="features.html">Features</a>
+          <a href="contact.html">Contact</a>
         </nav>
-    </header>
+        <small class="copyright">© <span id="year2"></span> Storyworks</small>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Main Content -->
-    <main class="features-page">
-
-        <section class="page-hero">
-            <h1>Features</h1>
-            <p>A closer look at what makes Storyworks helpful for creators.</p>
-        </section>
-
-        <!-- Key Features Section -->
-        <section class="feature-list">
-            <article class="feature-item">
-                <h2>Smart Organization</h2>
-                <p>Automatically sorts your media files so you don’t waste time renaming or hunting through folders.</p>
-            </article>
-
-            <article class="feature-item">
-                <h2>AI-Powered Tagging</h2>
-                <p>Labels photos, videos, and documents using context, making search easier and faster.</p>
-            </article>
-
-            <article class="feature-item">
-                <h2>Easy Sharing</h2>
-                <p>Share collections with teammates or clients in seconds with clean export options.</p>
-            </article>
-
-            <article class="feature-item">
-                <h2>Reliable Backup</h2>
-                <p>Your files are stored securely so you never lose important work.</p>
-            </article>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials">
-            <h2>What People Say</h2>
-
-            <div class="testimonial-box">
-                <p>"Storyworks helped my team cut our prep time in half."</p>
-                <span>- Sarah, Content Producer</span>
-            </div>
-
-            <div class="testimonial-box">
-                <p>"I finally feel organized. Everything is easy to find."</p>
-                <span>- Leo, Marketing Student</span>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Storyworks</p>
-    </footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
