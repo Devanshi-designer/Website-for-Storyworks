@@ -1,107 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Features — LABEL • Storyworks</title>
-  <meta name="description" content="LABEL features: scene detection, transcription, OCR, client naming templates, verification." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="theme-neo">
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="site-header">
-    <div class="container header-grid">
-      <a class="brand" href="index.html">
-        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="2.5" y="2.5" width="19" height="19" rx="4" stroke="currentColor" stroke-opacity="0.08"/>
-          <path d="M6 9h12M6 15h12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-        <span class="brand-text"><strong>LABEL</strong><small>by Storyworks</small></span>
-      </a>
-
-      <nav class="nav">
-        <a class="nav-link" href="index.html#how">How it works</a>
-        <a class="nav-link" href="features.html">Features</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-
-      <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">☰</button>
-    </div>
-  </header>
-
-  <main id="main" class="container">
-    <section class="section-reveal">
-      <h1>Features</h1>
-      <p class="lead">A concise breakdown of what LABEL can do for your pipeline.</p>
-    </section>
-
-    <section class="features-grid section-reveal">
-      <div class="feature-card">
-        <h3>Video: Scene & Object Detection</h3>
-        <p>Automatic scene boundary detection, per-scene thumbnails, and object tags to include in your naming template.</p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Audio: Transcription & Speaker ID</h3>
-        <p>Fine-grained speech-to-text with speaker diarization so names can include speaker labels or quotes.</p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Images: Classification & OCR</h3>
-        <p>Detect faces, landmarks, logos, and extract text from images (OCR) for meaningful filenames.</p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Templates & Mapping</h3>
-        <p>Define client naming templates (JSON/YAML) with placeholders for date, project, scene, speaker and more.</p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Verification UI</h3>
-        <p>Human-in-the-loop review before final export — approve, edit, or reject suggested names.</p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Audit & CSV Reporting</h3>
-        <p>CSV mapping and JSON logs for downstream automation and auditing.</p>
-      </div>
-    </section>
-
-    <section class="mockups section-reveal">
-      <h2>Mockups & Flow</h2>
-      <div class="mockup-grid">
-        <figure><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=60" alt="Mockup 1"></figure>
-        <figure><img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1200&q=60" alt="Mockup 2"></figure>
-        <figure><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60" alt="Mockup 3"></figure>
-      </div>
-    </section>
-
-    <section class="testimonials section-reveal">
-      <h2>User feedback (placeholder)</h2>
-      <blockquote class="testimonial">"LABEL turned a tedious 4 hour tidy into a 15 minute review — game changer for our post team." — Senior Editor, Sample Studio</blockquote>
-      <blockquote class="testimonial">"We trust the verification step — automates grunt work without surprises." — Creative Director, Sample Agency</blockquote>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="foot-left">
-        <div class="foot-brand">LABEL • Storyworks</div>
-        <small class="muted">AI-assisted file organization</small>
-      </div>
-      <div class="foot-right">
-        <nav class="footer-nav">
-          <a href="index.html#how">How it works</a>
-          <a href="features.html">Features</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <small class="copyright">© <span id="year2"></span> Storyworks</small>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How It Works | Label</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.jpeg" alt="LABEL Logo" class="logo-img">
+                    </a>
+                </h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="features.html" class="active">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero" style="min-height: 40vh; padding: 5rem 0;">
+                <div class="container">
+                    <h2>The Proprietary 5-Step Label Stack: A Technical Deep Dive</h2>
+                    <p class="hero-sub">Label is an enterprise-grade solution built on a fault-tolerant, microservices architecture that guarantees reliability and unparalleled processing speed.</p>
+                </div>
+            </section>
+            <section id="phase1" class="comparison-section">
+                <div class="container">
+                    <h3>Phase 1: Secure Ingestion and Pre-Processing</h3>
+                    <p class="hero-sub" style="font-size: 1.2rem; margin-bottom: 3rem;">Getting your files into the system with maximal security and minimal latency across all storage types.</p>
+                    <div class="feature-grid">
+                        <article class="comp-box">
+                            <h4>Step 1: Universal File Ingestion</h4>
+                            <p>We support all professional media formats (ProRes, RAW, PSD, WAV). Uploads are facilitated via secure TLS 1.3 encrypted connections from local drives, FTP, Amazon S3, Google Cloud Storage, or Microsoft Azure. Our API ensures seamless integration with your existing DAM/CMS systems.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h4>Step 2: Dual-Layer Metadata Harvesting</h4>
+                            <p>We perform two crucial indexing tasks. EXIF/IPTC Data Extraction pulls standard fields (Camera Model, GPS, Author). A proprietary scraper identifies deep file context like camera sensor type, lens model, and editor history embedded in the asset.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="static-image-block">
+                <img src="images/6.jpeg" alt="Diagram showing data flow into the CNN/NLP AI core.">
+                <p style="margin-top: 1rem; color: #ccc;">Figure 1. The intelligent deep-learning core architecture.</p>
+            </section>
+            <section class="comparison-section" style="padding-top: 0;">
+                <div class="container">
+                    <h3 style="margin-bottom: 1.5rem;">Pre-Processing Logic & Syntax</h3>
+                    <div class="code-block">
+                        <p>
+                            <strong>FUNCTION</strong> process_file(asset_path, client_schema)
+                        </p>
+                        <p>1. if (asset_path.source == 'S3' || asset_path.source == 'GCS') {</p>
+                        <p>2. Initiate_TLS_Tunnel(asset_path);</p>
+                        <p>3. }</p>
+                        <p>4. **METADATA_RESULT** = Extract_EXIF_and_Deep_Context(asset_path);</p>
+                        <p>5. if (METADATA_RESULT.contains_location) {</p>
+                        <p>6. return Analyze_AI_Content(asset_path, **METADATA_RESULT**);</p>
+                        <p>7. } else {</p>
+                        <p>8. return Apply_Fallback_Protocol(asset_path);</p>
+                        <p>9. }</p>
+                        <p>10. <strong>END FUNCTION</strong>
+                        </p>
+                    </div>
+                    <p style="color: #aaa; font-size: 0.9rem; text-align: left;">*This pseudo-code demonstrates the conditional logic applied upon initial ingestion, prioritizing rich metadata before engaging the AI core.*</p>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section id="phase2" class="comparison-section" style="background: #0a0a0a;">
+                <div class="container">
+                    <h3>Phase 2: The Intelligent Core - AI Content Analysis</h3>
+                    <p class="hero-sub" style="font-size: 1.2rem; margin-bottom: 3rem;">Our proprietary engine uses specialized, high-performance algorithms to understand what is inside every file.</p>
+                    <div class="comparison-grid">
+                        <div class="comp-box">
+                            <h4>Visual Media Deep Analysis (Images/Video Frames)</h4>
+                            <p>Label employs Convolutional Neural Networks (CNNs) trained on vast creative datasets. We detect Objects, Scenes, and Actions. This generated data forms the descriptive part of the new file name, eliminating ambiguity.</p>
+                            <p style="margin-top: 0.5rem; color: var(--primary-color);">*Key Algorithms: YOLOv5 and proprietary image segmentation for high-speed analysis.*</p>
+                        </div>
+                        <div class="comp-box">
+                            <h4>Auditory and Textual Media Analysis (Audio/Documents)</h4>
+                            <p>For audio, we use Automatic Speech Recognition (ASR) models to transcribe spoken words. For documents, OCR captures embedded text, while Recurrent Neural Networks (RNNs) perform semantic analysis to identify project codes and intent.</p>
+                            <p style="margin-top: 0.5rem; color: var(--primary-color);">*Key Algorithms: Seq2Seq Transcription and advanced NLP Topic Modeling for context.*</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section id="phase3" class="comparison-section">
+                <div class="container">
+                    <h3>Phase 3: Automated Naming, Folder Orchestration, and Verification</h3>
+                    <p class="hero-sub" style="font-size: 1.2rem; margin-bottom: 3rem;">Turning data into perfectly compliant, final assets ready for immediate use.</p>
+                    <div class="feature-grid">
+                        <article class="comp-box">
+                            <h4>Step 3: Intelligent Naming Generation</h4>
+                            <p>The system applies your pre-configured naming templates. Missing data is handled by intelligent fallback protocols to prevent naming gaps.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h4>Step 4: Hierarchical Folder Orchestration</h4>
+                            <p>Label applies your client's required folder structure (e.g., /ProjectName/Video/Renders/Final/). This recursive folder creation and sorting eliminates manual drag-and-drop.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h4>Step 5: Non-Destructive Verification and Audit</h4>
+                            <p>Label is non-destructive. It creates a copy and generates a detailed CSV audit report that maps every Old Name to every New Name, requiring a final human approval before deployment.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="static-image-block">
+                <img src="images/7.jpeg" alt="Illustration of a complex, nested folder structure being created automatically.">
+                <p style="margin-top: 1rem; color: #ccc;">Figure 2. High-availability cloud infrastructure and orchestration.</p>
+            </section>
+            <section id="architecture" class="comparison-section" style="background: #0a0a0a; text-align: center;">
+                <div class="container">
+                    <h3>Enterprise Architecture and Security</h3>
+                    <p class="hero-sub">The backbone of Label is a modern, reliable infrastructure designed for the world's largest agencies.</p>
+                    <button id="toggleDetailsBtn" class="secondary-cta-button">Read Complete System Specs</button>
+                    <div id="technicalContent" style="text-align: left; max-width: 900px; margin: 1.5rem auto;">
+                        <h4 style="color: var(--primary-color);">Scalability and Reliability (The IBD Ask)</h4>
+                        <ul>
+                            <li>**Microservices Architecture:** The entire platform is decoupled, preventing a failure in one stage from crippling the process.</li>
+                            <li>**Job Queuing System:** We utilize dedicated queues (e.g., RabbitMQ/Kafka) to ensure **guaranteed delivery** and allow for **parallel processing** of up to 100,000 files simultaneously.</li>
+                            <li>**Elastic Compute:** The system is hosted on an **auto-scaling cloud environment**. We guarantee **99.999% uptime** reliability.</li>
+                        </ul>
+                        <h4 style="color: var(--primary-color); margin-top: 1.5rem;">Security and Compliance Protocol</h4>
+                        <ul>
+                            <li>**End-to-End Encryption:** All data, both **at rest** and **in transit**, is protected using **AES-256 encryption** and **TLS 1.3 protocol**.</li>
+                            <li>**Zero Data Leakage:** Client credentials are stored in isolated, cryptographically secured vaults. We operate with a strict **zero-retention policy** for client assets after final deployment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2025 Label by Innovate By Day. All rights reserved. | Built for creative teams. | <a href="#phase1">Ingestion</a> | <a href="#phase2">AI Core</a> | <a href="#architecture">Architecture</a>
+                </p>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>

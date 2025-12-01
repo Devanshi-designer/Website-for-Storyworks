@@ -1,149 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Storyworks — LABEL</title>
-  <meta name="description" content="LABEL by Storyworks — AI-powered file naming, organization & reporting for creative teams." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="theme-neo">
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="site-header" role="banner">
-    <div class="container header-grid">
-      <a class="brand" href="index.html" aria-label="Storyworks LABEL">
-        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="2.5" y="2.5" width="19" height="19" rx="4" stroke="currentColor" stroke-opacity="0.08" />
-          <path d="M6 9h12M6 15h12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-        <span class="brand-text"><strong>LABEL</strong><small>by Storyworks</small></span>
-      </a>
-
-      <nav id="mainNav" class="nav" role="navigation" aria-label="Main Navigation">
-        <a class="nav-link" href="index.html#how">How it works</a>
-        <a class="nav-link" href="features.html">Features</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">☰</button>
-      </div>
-    </div>
-
-    <!-- Mobile nav -->
-    <div id="mobileNav" class="mobile-nav" hidden>
-      <a href="index.html#how" class="mobile-link">How it works</a>
-      <a href="features.html" class="mobile-link">Features</a>
-      <a href="contact.html" class="mobile-link">Contact</a>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero container">
-      <div class="hero-left">
-        <h1 class="hero-title">Turn chaotic client folders into organized story-ready assets — automatically.</h1>
-        <p class="hero-sub">LABEL uses content-aware AI (scene detection, transcription, OCR, image classification) to rename, tag and output verified CSV reports — so creative teams spend time on storytelling, not file chores.</p>
-
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="contact.html">Request a demo</a>
-          <a class="btn btn-ghost" href="features.html">See features</a>
-        </div>
-
-        <ul class="quick-features">
-          <li>AI content analysis for video, audio, images & text</li>
-          <li>Human-in-the-loop verification</li>
-          <li>CSV mapping & audit logs</li>
-        </ul>
-      </div>
-
-      <div class="hero-right">
-        <div class="glass-card mockup">
-          <div class="carousel" id="heroCarousel" aria-roledescription="carousel">
-            <div class="carousel-track">
-              <figure class="slide"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1400&q=60" alt="LABEL mockup 1"></figure>
-              <figure class="slide"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1400&q=60" alt="LABEL mockup 2"></figure>
-              <figure class="slide"><img src="https://images.unsplash.com/photo-1523475496153-3d6cc9c0efb1?auto=format&fit=crop&w=1400&q=60" alt="LABEL mockup 3"></figure>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Label | Rename Yourself</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.jpeg" alt="LABEL Logo" class="logo-img">
+                    </a>
+                </h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="features.html">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
-            <button class="carousel-btn next" aria-label="Next slide">›</button>
-            <ol class="carousel-dots" aria-hidden="true"></ol>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROBLEM / SOLUTION -->
-    <section id="how" class="container section-reveal">
-      <div class="two-up">
-        <article class="panel">
-          <h2>Problem</h2>
-          <p>Teams waste hours normalizing file names and structure: scattered image names, ambiguous final.mov files, missing context — blocking editors and slowing delivery.</p>
-        </article>
-
-        <article class="panel alt">
-          <h2>Solution — LABEL</h2>
-          <p>Ingest a client folder. LABEL analyzes content, extracts semantic tags, maps to client naming templates, and produces a verified set of renamed files plus a CSV mapping report for audit and handoff.</p>
-        </article>
-      </div>
-
-      <div class="read-more-block">
-        <p id="shortText">LABEL keeps creative control human while automating repetitive work.</p>
-        <p id="longText" class="collapsed">It runs scene detection, speaker-aware transcription, OCR on frames, image classification and metadata extraction. Outputs are mapped into customizable naming templates (JSON/YAML). An optional verification UI lets editors approve or tweak names before final export. LABEL supports batching, retry logic and produces human-readable CSV and JSON logs for downstream systems.</p>
-        <button id="readToggle" class="btn btn-link">Read more</button>
-      </div>
-    </section>
-
-    <!-- BENEFITS -->
-    <section class="container benefits section-reveal">
-      <h2>Why teams love LABEL</h2>
-      <div class="benefit-grid">
-        <div class="benefit">
-          <h3>Save time</h3>
-          <p>Process hundreds of mixed files in minutes, not hours.</p>
-        </div>
-        <div class="benefit">
-          <h3>Human-first</h3>
-          <p>Suggested names with verification keep creative decisions intact.</p>
-        </div>
-        <div class="benefit">
-          <h3>Auditable</h3>
-          <p>CSV mapping and logs make handoffs transparent and traceable.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="container cta-banner section-reveal">
-      <div class="cta-inner">
-        <div>
-          <h3>Ready to remove the busywork?</h3>
-          <p>Request a demo and see LABEL name your files automatically.</p>
-        </div>
-        <a class="btn btn-primary btn-cta" href="contact.html">Request demo</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="foot-left">
-        <div class="foot-brand">LABEL • Storyworks</div>
-        <small class="muted">AI-assisted file organization for creative teams</small>
-      </div>
-      <div class="foot-right">
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="index.html#how">How it works</a>
-          <a href="features.html">Features</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <small class="copyright">© <span id="year"></span> Storyworks</small>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h2>Stop renaming files like <span id="typewriterTarget" class="typewriter-text"></span>
+                        <span class="cursor"></span>
+                    </h2>
+                    <p class="hero-sub">Welcome to Label, the world's first proprietary AI solution built specifically to eliminate administrative friction in creative workflows. Label processes millions of files, instantly and accurately.</p>
+                    <a href="features.html" class="cta-button">See AI in Action & Request a Demo</a>
+                </div>
+            </section>
+            <section class="carousel-section">
+                <div class="container" style="text-align: center;">
+                    <h2>Visualizing the Transformation</h2>
+                    <p class="hero-sub" style="margin-bottom: 3rem;">See how Label instantly transforms disorganized assets into production-ready files.</p>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/2.jpeg" alt="BEFORE: Messy desk cluttered with paper and monitors">
+                            <div class="slide-caption">BEFORE: IMG_4523, FINAL_01, Untitled-copy.mov (Chaos)</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/3.jpeg" alt="AI processing illustration with neural network">
+                            <div class="slide-caption">PROCESSING: AI identifies objects, scenes, and audio context.</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/4.jpeg" alt="AFTER: Clean, organized file manager list">
+                            <div class="slide-caption">AFTER: 20251201_IBD_Snowman_Scene3.MOV (Perfect Naming)</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/5.jpeg" alt="Folder hierarchy structure being created automatically">
+                            <div class="slide-caption">DEPLOYED: Automated Folder Orchestration ensures perfect archival.</div>
+                        </div>
+                    </div>
+                    <button id="carousel-prev" class="carousel-button prev">‹</button>
+                    <button id="carousel-next" class="carousel-button next">›</button>
+                </div>
+            </section>
+            <section id="metrics" class="comparison-section" style="padding: 2rem 0; background: #0a0a0a;">
+                <div class="container">
+                    <h2>Quantifying the Label Advantage</h2>
+                    <p class="hero-sub" style="margin-bottom: 2rem;">Explore the measurable gains in time, accuracy, and compliance.</p>
+                </div>
+                <div class="horizontal-scroll-container">
+                    <article class="scroll-item">
+                        <h3 style="color: var(--primary-color);">75% Time Reduction</h3>
+                        <p>Manual file management is replaced by a multi-threaded, automated pipeline. Batch processing 10,000 assets now takes minutes, not days. We integrate directly into your cloud storage to minimize transfer latency.</p>
+                    </article>
+                    <article class="scroll-item">
+                        <h3 style="color: var(--primary-color);">99.9% Naming Accuracy</h3>
+                        <p>Leveraging proprietary CNNs and advanced NLP, the AI eliminates human error in version control. The final file names are checked against schema rules before deployment, ensuring flawless output.</p>
+                    </article>
+                    <article class="scroll-item">
+                        <h3 style="color: var(--primary-color);">100% Compliance</h3>
+                        <p>We enforce your client’s strictest naming convention (e.g., ISO, Project ID-based) across every single asset. Guaranteed compliance means faster approval times and zero pushback on asset delivery.</p>
+                    </article>
+                    <article class="scroll-item">
+                        <h3 style="color: var(--primary-color);">Cost Reduction (OpEx)</h3>
+                        <p>By automating low-value tasks performed by high-cost creative staff, Label significantly lowers operational expenditure, turning non-billable hours into productive time. Calculate your ROI during a consultation.</p>
+                    </article>
+                    <article class="scroll-item">
+                        <h3 style="color: var(--primary-color);">Creative Flow Restoration</h3>
+                        <p>Eliminate cognitive switching costs. Staff stay focused on high-value creative tasks, reducing burnout and maximizing the quality of the final artistic output.</p>
+                    </article>
+                </div>
+            </section>
+            <section id="problem" class="comparison-section">
+                <div class="container">
+                    <h2>The Hidden Cost of Chaos: Why Organization Fails</h2>
+                    <p class="hero-sub">Manual file management isn't just annoying, it's a massive drag on profitability, client retention, and creative output.</p>
+                    <div class="comparison-grid">
+                        <div class="comp-box">
+                            <h4>Financial Drain: Unpaid Labor</h4>
+                            <p>The average creative professional spends 1.5 to 3 hours per 1,000 files on non-billable renaming. This translates to hundreds of lost employee hours that impact your profit margins and resource allocation.</p>
+                        </div>
+                        <div class="comp-box">
+                            <h4>Creative Burnout: The Flow Killer</h4>
+                            <p>Forcing highly paid Art Directors and Editors to perform repetitive data entry tasks like renaming `IMG_1234.JPG` kills creative flow and leads to burnout. Label restores the mental bandwidth required for true artistic innovation.</p>
+                        </div>
+                        <div class="comp-box">
+                            <h4>Risk Exposure: Version Control Errors</h4>
+                            <p>Misnaming a final file can lead to delivering the wrong assets, damaging client trust, and incurring steep revision penalties. Label’s automated, schema-enforced naming guarantees a single source of truth.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="parallax-section">
+                <div class="parallax-overlay"></div>
+                <div class="parallax-content container">
+                    <h2>The Future of Workflow is Automated.</h2>
+                    <p class="hero-sub">Don't just keep up with the competition, leave file chaos behind. Label is your strategic advantage.</p>
+                    <a href="contact.html" class="cta-button">Transform Your Agency Today</a>
+                </div>
+            </section>
+            <section id="value" class="benefits-section" style="background: #0a0a0a; padding-top: 2rem;">
+                <div class="container">
+                    <h2 style="text-align: center;">The Innovate By Day Philosophy: Alignment with Core Values</h2>
+                    <p class="hero-sub" style="text-align: center;">Label is more than a product; it’s a strategic tool designed to embody the IBD mandate of delivering Change, not just products.</p>
+                    <div class="feature-grid">
+                        <article class="comp-box">
+                            <h3>Elevating Authenticity</h3>
+                            <p>By automating technical tasks, we remove the "boring part" of production, allowing teams to focus on the authentic core of the client's message.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h3>Maximizing Creativity</h3>
+                            <p>Less time managing files means more time ideating. Label maximizes creative capacity by removing the single largest barrier to creative flow.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h3>Ensuring Impact</h3>
+                            <p>Flawless organization ensures that final content delivery is always professional, on-time, and error-free, maximizing client satisfaction and project impact.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="cta-footer" class="comparison-section" style="text-align: center; padding: 4rem 0;">
+                <div class="container">
+                    <h2>Ready to Transform Your Agency's Workflow?</h2>
+                    <p class="hero-sub">The future of creative production is organized. Start your efficiency revolution today.</p>
+                    <a href="contact.html" class="cta-button">Schedule Your Custom Demo</a>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2025 Label by Innovate By Day. All rights reserved. | Built for modern creative agencies. | <a href="#problem">Problem</a> | <a href="#metrics">Metrics</a> | <a href="#value">Values</a>
+                </p>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>

@@ -1,107 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — LABEL • Storyworks</title>
-  <meta name="description" content="Contact Storyworks to request demo or early access to LABEL." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="theme-neo">
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="site-header">
-    <div class="container header-grid">
-      <a class="brand" href="index.html">
-        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="2.5" y="2.5" width="19" height="19" rx="4" stroke="currentColor" stroke-opacity="0.08"/>
-          <path d="M6 9h12M6 15h12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-        <span class="brand-text"><strong>LABEL</strong><small>by Storyworks</small></span>
-      </a>
-
-      <nav class="nav">
-        <a class="nav-link" href="index.html#how">How it works</a>
-        <a class="nav-link" href="features.html">Features</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-
-      <button id="navToggle3" class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">☰</button>
-    </div>
-  </header>
-
-  <main id="main" class="container contact-page section-reveal">
-    <section>
-      <h1>Contact & Request Demo</h1>
-      <p class="lead">Fill in the form and we’ll reach out to schedule a demo. This demo project uses client-side validation for the assignment — replace the endpoint with your backend to enable real messages.</p>
-    </section>
-
-    <section class="contact-grid">
-      <form id="contactForm" class="contact-form" novalidate>
-        <div class="field">
-          <label for="name">Name <span aria-hidden="true" class="req">*</span></label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
-          <small class="error" id="err-name"></small>
-        </div>
-
-        <div class="field">
-          <label for="email">Email <span aria-hidden="true" class="req">*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-          <small class="error" id="err-email"></small>
-        </div>
-
-        <div class="field">
-          <label for="message">Message <span aria-hidden="true" class="req">*</span></label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-          <small class="error" id="err-message"></small>
-        </div>
-
-        <div class="actions">
-          <button type="submit" class="btn btn-primary">Send message</button>
-          <button type="reset" class="btn btn-ghost">Reset</button>
-        </div>
-
-        <div id="formNotice" class="form-notice" hidden>
-          <strong>✓</strong> Form validated locally. This demo does not send emails.
-        </div>
-      </form>
-
-      <aside class="contact-aside">
-        <div class="aside-card">
-          <h3>About LABEL</h3>
-          <p>LABEL is created by Storyworks to remove repetitive file naming and enable teams to focus on storytelling.</p>
-          <h4>Mission</h4>
-          <p>Enable creative teams to ship better work faster — by automating the boring bits.</p>
-        </div>
-
-        <div class="aside-card muted">
-          <h4>Office</h4>
-          <p>Remote • Demo by appointment</p>
-          <h4>Follow</h4>
-          <p><a href="#" aria-label="Follow on Twitter">Twitter</a> • <a href="#" aria-label="Follow on LinkedIn">LinkedIn</a></p>
-        </div>
-      </aside>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="foot-left">
-        <div class="foot-brand">LABEL • Storyworks</div>
-        <small class="muted">AI-assisted file organization</small>
-      </div>
-      <div class="foot-right">
-        <nav class="footer-nav">
-          <a href="index.html#how">How it works</a>
-          <a href="features.html">Features</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <small class="copyright">© <span id="year3"></span> Storyworks</small>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us & About | Label</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.jpeg" alt="LABEL Logo" class="logo-img">
+                    </a>
+                </h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="features.html">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="active">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero" style="min-height: 40vh; padding: 4rem 0;">
+                <div class="container">
+                    <h2>Connect with the Label Team</h2>
+                    <p class="hero-sub">Whether you need a custom enterprise quote or are seeking support, our dedicated team is here to assist you quickly and confidentially.</p>
+                </div>
+            </section>
+            <section id="contact-form-section" class="comparison-section" style="padding-bottom: 2rem;">
+                <div class="container">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Enterprise Consultation Inquiry</h3>
+                        <p style="color: #ccc; margin-bottom: 2rem;">Our sales team responds to all high-priority inquiries within one business day. Fields marked with * are required for client validation.</p>
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email*</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company / Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Detailed Project Needs / Message*</label>
+                            <textarea id="message" name="message" rows="7" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="cta-button">Send Confidential Inquiry</button>
+                        <p class="form-status" id="formStatus" style="margin-top: 1rem;"></p>
+                    </form>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section id="about" class="comparison-section" style="padding-top: 0; background: #0a0a0a;">
+                <div class="container">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Innovate By Day: The Strategic Force Behind Label</h2>
+                    <p class="hero-sub" style="text-align: center;">Label is the embodiment of IBD's core values, built by a multi-disciplinary team to deliver change, not just products.</p>
+                    <div class="feature-grid" style="margin-top: 3rem;">
+                        <article class="comp-box">
+                            <h4 style="color: var(--primary-color);">Mission: Story Driven Change</h4>
+                            <p>IBD’s core philosophy is Story Driven, Innovative, and Value Led. We are fundamentally not in the business of selling products, but in delivering fundamental change to the creative sector.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h4 style="color: var(--primary-color);">Vision: Scalable Solutions</h4>
+                            <p>Label is our first scalable, technology-enabled offering designed to operationalize this mission by solving the largest administrative friction point in high-volume creative agencies.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h4 style="color: var(--primary-color);">Our Cross-Functional Team</h4>
+                            <p>The development team comprises a UI/UX Specialist, Copywriter, Art Director, Project Manager, and AI Specialist. This ensures Label is powerful technology that is also user-friendly and aesthetically aligned.</p>
+                        </article>
+                        <article class="comp-box">
+                            <h4 style="color: var(--primary-color);">Expertise: ROI and P&L Focus</h4>
+                            <p>Our Project Manager drives agile execution, budget control, and ensures the product's features perfectly address the client's P&L pain points and strategic goals, guaranteeing measurable ROI for your investment.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section id="faq" class="comparison-section" style="padding-top: 2rem; background: #0a0a0a;">
+                <div class="container">
+                    <h2 style="text-align: center; margin-bottom: 3rem;">Frequently Asked Questions (FAQ)</h2>
+                    <div style="max-width: 900px; margin: 0 auto; color: #ccc;">
+                        <h4 style="color: var(--primary-color); margin-top: 1rem;">Q: Is Label purely cloud-based or can it run on-premise?</h4>
+                        <p>A: Label is cloud-native SaaS, but for large enterprise clients with strict security mandates, we offer a dedicated private cloud or hybrid on-premise deployment solution. Contact our business development team for a custom assessment.</p>
+                        <h4 style="color: var(--primary-color); margin-top: 1rem;">Q: What specific file analysis methods are used for media types?</h4>
+                        <p>A: For visual media, we employ Object Recognition (CNNs). For audio, we use Automatic Speech Recognition (ASR). For documents, we combine OCR with Natural Language Processing (NLP) for keyword and context extraction.</p>
+                        <h4 style="color: var(--primary-color); margin-top: 1rem;">Q: How is data security and ownership handled?</h4>
+                        <p>A: Your data remains yours. All transfers and data at rest are protected with AES-256 encryption and TLS 1.3. We operate a strict zero-retention policy; client assets are permanently purged from our processing servers immediately upon final deployment approval.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2025 Label by Innovate By Day. All rights reserved. | <a href="#about">About IBD</a> | <a href="#faq">FAQ</a> | Support Email: support@label.io </p>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>
